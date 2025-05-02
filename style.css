@@ -103,5 +103,77 @@ All the SCSS File in SCSS Folder of Assets Folder. You can read the doc file als
  // footer - Section 
  @import 'footer';n facts */
 
+/* Team Section Styles */
+.team-section {
+    background-color: #f8f9fa;
+}
+
+.team-card {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.team-image img {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.05);
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.team-content {
+    padding: 1.5rem 1rem;
+}
+
+.team-content h4 {
+    color: #333;
+    font-weight: 600;
+}
+
+.team-content p {
+    font-size: 0.9rem;
+}
+
 
 
