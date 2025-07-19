@@ -130,7 +130,7 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Takshaga, Upputhara P.O, Idukki, 685505</a>
+                                        <a target="_blank" href="#">Takshaga Spatial Solutions, 2nd Floor, Opp. Panchayat Building, Upputhara P.O, Idukki District, Kerala – 685505, India</a>
                                     </div>
                     
                                 </li>
@@ -163,6 +163,11 @@
                             <div class="header-button mt-4">
                                 <a href="contact.html" class="theme-btn text-center">
                                     Contact Us
+                                </a>
+                            </div>
+                            <div class="header-button mt-3">
+                                <a href="quote.html" class="theme-btn text-center">
+                                    Get Free Quote <i class="fas fa-long-arrow-right"></i>
                                 </a>
                             </div>
                             <div class="social-icon d-flex align-items-center">
@@ -1188,39 +1193,42 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="consultation-form-wrapper">
-                            <form class="consultation-form">
+                            <form class="consultation-form" id="consultation-section-form">
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Your Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number *" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email Address" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Email Address">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <select class="form-control" required>
+                                            <select name="service_interest" class="form-control">
                                                 <option value="" disabled selected>Service Interested In</option>
-                                                <option value="house-plan">House Plan</option>
-                                                <option value="permit-drawing">Permit Drawing</option>
-                                                <option value="interior-works">Interior Works</option>
-                                                <option value="construction">Construction</option>
-                                                <option value="site-supervision">Site Supervision</option>
-                                                <option value="landscaping">Landscaping</option>
+                                                <option value="residential">Residential Interior Design</option>
+                                                <option value="commercial">Commercial Interior Design</option>
+                                                <option value="kitchen">Kitchen Design</option>
+                                                <option value="bathroom">Bathroom Design</option>
+                                                <option value="living_room">Living Room Design</option>
+                                                <option value="bedroom">Bedroom Design</option>
+                                                <option value="office">Office Design</option>
+                                                <option value="renovation">Renovation</option>
+                                                <option value="consultation">Design Consultation</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+                                            <textarea name="additional_info" class="form-control" rows="4" placeholder="Tell us about your project"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">
@@ -1669,120 +1677,201 @@
                     font-size: 24px;
                 }
 
-                /* Header Mobile Styles */
-                .header-main {
-                    padding: 15px 0;
+                /* Header Button Mobile Responsive */
+                .header-button {
+                    display: block !important;
+                    margin: 10px 0;
                 }
-
-                .logo img {
-                    width: 80px;
-                }
-
-                /* Footer Mobile Styles */
-                .footer-bottom {
+                
+                .header-button .theme-btn {
+                    display: inline-block;
+                    width: auto;
+                    min-width: 140px;
+                    padding: 12px 20px;
+                    font-size: 14px;
                     text-align: center;
+                    white-space: nowrap;
                 }
-
-                .footer-bottom .footer-wrapper {
-                    flex-direction: column;
-                    gap: 15px;
+                
+                .header-right {
+                    flex-wrap: wrap;
+                    gap: 10px;
                 }
-
-                .footer-menu {
-                    justify-content: center;
+                
+                .header__hamburger {
+                    order: 2;
                 }
-
-                /* Chatbot Mobile Styles */
-                .chatbot-window {
-                    width: 100%;
-                    height: 100%;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    bottom: auto;
-                    border-radius: 0;
-                }
-
-                .chatbot-toggle {
-                    width: 50px;
-                    height: 50px;
-                }
-
-                /* Navigation Mobile Styles */
-                .mean__menu-wrapper .main-menu {
-                    padding: 20px 0;
-                }
-
-                .mean__menu-wrapper .main-menu ul li a {
-                    padding: 10px 0;
-                }
-
-                /* Hero Section Mobile Styles */
-                .hero-items {
-                    min-height: 60vh;
-                }
-
-                .hero-content {
-                    padding: 20px;
-                }
-
-                /* Service Section Mobile Styles */
-                .service-box-items {
-                    padding: 20px;
-                }
-
-                /* Portfolio Section Mobile Styles */
-                .portfolio-single-items {
-                    margin-bottom: 20px;
-                }
-
-                /* Testimonial Section Mobile Styles */
-                .testimonial-card {
-                    margin-bottom: 20px;
-                }
-
-                /* Process Section Mobile Styles */
-                .process-step {
-                    margin-bottom: 20px;
-                }
-
-                /* Feature Box Mobile Styles */
-                .feature-box {
-                    margin-bottom: 20px;
-                }
-
-                /* CTA Section Mobile Styles */
-                .cta-wrapper {
-                    text-align: center;
-                }
-
-                .cta-button {
-                    margin-top: 20px;
+                
+                .header-button {
+                    order: 1;
                 }
             }
 
-            /* Fix for iOS Safari 100vh issue */
-            @supports (-webkit-touch-callout: none) {
-                .hero-items {
-                    min-height: -webkit-fill-available;
+            /* Header Mobile Styles */
+            @media (max-width: 991px) {
+                /* Hide header button on mobile - it will be in offcanvas */
+                .header-right .header-button {
+                    display: none !important;
+                }
+                
+                .header-right {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-items: center;
+                }
+                
+                .header__hamburger {
+                    order: 1;
                 }
             }
 
-            /* Touch Device Optimizations */
-            @media (hover: none) {
-                .theme-btn:hover {
-                    transform: none;
+            @media (max-width: 767px) {
+                /* Hide header button on mobile - it will be in offcanvas */
+                .header-right .header-button {
+                    display: none !important;
                 }
+                
+                .header-right {
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    align-items: center;
+                }
+                
+                .header__hamburger {
+                    order: 1;
+                }
+            }
 
-                .feature-box:hover {
-                    transform: none;
+            @media (max-width: 575px) {
+                /* Hide header button on mobile - it will be in offcanvas */
+                .header-right .header-button {
+                    display: none !important;
                 }
+                
+                .header-right {
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    align-items: center;
+                }
+                
+                .header__hamburger {
+                    order: 1;
+                }
+            }
 
-                .process-step:hover {
-                    transform: none;
-                }
+            .header-main {
+                padding: 15px 0;
+            }
+
+            /* Offcanvas Button Styles */
+            .offcanvas__info .header-button {
+                margin: 15px 0;
+            }
+            
+            .offcanvas__info .header-button .theme-btn {
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                display: block;
+            }
+            
+            .offcanvas__info .header-button .theme-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .logo img {
+                width: 80px;
+            }
+
+            /* Footer Mobile Styles */
+            .footer-bottom {
+                text-align: center;
+            }
+
+            .footer-bottom .footer-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .footer-menu {
+                justify-content: center;
+            }
+
+            /* Chatbot Mobile Styles */
+            .chatbot-window {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: auto;
+                border-radius: 0;
+            }
+
+            .chatbot-toggle {
+                width: 50px;
+                height: 50px;
+            }
+
+            /* Navigation Mobile Styles */
+            .mean__menu-wrapper .main-menu {
+                padding: 20px 0;
+            }
+
+            .mean__menu-wrapper .main-menu ul li a {
+                padding: 10px 0;
+            }
+
+            /* Hero Section Mobile Styles */
+            .hero-items {
+                min-height: 60vh;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            /* Service Section Mobile Styles */
+            .service-box-items {
+                padding: 20px;
+            }
+
+            /* Portfolio Section Mobile Styles */
+            .portfolio-single-items {
+                margin-bottom: 20px;
+            }
+
+            /* Testimonial Section Mobile Styles */
+            .testimonial-card {
+                margin-bottom: 20px;
+            }
+
+            /* Process Section Mobile Styles */
+            .process-step {
+                margin-bottom: 20px;
+            }
+
+            /* Feature Box Mobile Styles */
+            .feature-box {
+                margin-bottom: 20px;
+            }
+
+            /* CTA Section Mobile Styles */
+            .cta-wrapper {
+                text-align: center;
+            }
+
+            .cta-button {
+                margin-top: 20px;
             }
         </style>
+
+
 
         <!-- Footer Section Start -->
         <footer class="footer-section">
@@ -1841,9 +1930,10 @@
                                     <div class="contact-item">
                                         <i class="fas fa-map-marker-alt"></i>
                                         <div class="contact-text">
-                                            <span>Takshaga</span>
-                                            <span>Upputhara P.O, Idukki</span>
-                                            <span>685505, Kerala</span>
+                                            <span>Takshaga Spatial Solutions</span>
+                                            <span>2nd Floor, Opp. Panchayat Building</span>
+                                            <span>Upputhara P.O, Idukki District</span>
+                                            <span>Kerala – 685505, India</span>
                                         </div>
                                             </div>
                                     <div class="contact-item">
@@ -1863,7 +1953,7 @@
                 <div class="container">
                     <div class="footer-bottom-content">
                         <div class="copyright">
-                            <p>© 2024 <a href="index.html">Takshaga</a>. All rights reserved.</p>
+                            <p>© 2025 <a href="index.html">Takshaga</a>. All rights reserved.</p>
                             </div>
                         <div class="footer-bottom-links">
                             <a href="/privacy-policy">Privacy Policy</a>
@@ -2518,7 +2608,7 @@
         
         // Contact information
         if (/contact|number|phone|reach|address|location/.test(lowerMsg)) {
-            return "You can reach Takshaga Architects at:<br><br><strong>Address:</strong> Upputhara P.O, Idukki, 685505<br><strong>Phone:</strong> +91 9846660624<br><br>Would you like to schedule a consultation?";
+                            return "You can reach Takshaga Spatial Solutions at:<br><br><strong>Address:</strong> 2nd Floor, Opp. Panchayat Building, Upputhara P.O, Idukki District, Kerala – 685505, India<br><strong>Phone:</strong> +91 9846660624<br><br>Would you like to schedule a consultation?";
         }
         
         // Pricing
@@ -2570,6 +2660,8 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+        <!--<< SweetAlert2 JS >>-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 
         <!-- Consultation Modal -->
         <div class="consultation-modal" id="consultationModal">
@@ -2580,29 +2672,32 @@
                 </div>
                 <div class="modal-body">
                     <p>Let's discuss your project and bring your vision to life</p>
-                    <form class="consultation-form">
+                    <form class="consultation-form" id="consultation-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number *" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <input type="email" name="email" class="form-control" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <select class="form-control" required>
+                            <select name="service_interest" class="form-control">
                                 <option value="" disabled selected>Service Interested In</option>
-                                <option value="house-plan">House Plan</option>
-                                <option value="permit-drawing">Permit Drawing</option>
-                                <option value="interior-works">Interior Works</option>
-                                <option value="construction">Construction</option>
-                                <option value="site-supervision">Site Supervision</option>
-                                <option value="landscaping">Landscaping</option>
+                                <option value="residential">Residential Interior Design</option>
+                                <option value="commercial">Commercial Interior Design</option>
+                                <option value="kitchen">Kitchen Design</option>
+                                <option value="bathroom">Bathroom Design</option>
+                                <option value="living_room">Living Room Design</option>
+                                <option value="bedroom">Bedroom Design</option>
+                                <option value="office">Office Design</option>
+                                <option value="renovation">Renovation</option>
+                                <option value="consultation">Design Consultation</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="3" placeholder="Tell us about your project" required></textarea>
+                            <textarea name="additional_info" class="form-control" rows="4" placeholder="Tell us about your project"></textarea>
                         </div>
                         <button type="submit" class="theme-btn w-100">Request Consultation <i class="fas fa-arrow-right"></i></button>
                     </form>
@@ -2624,6 +2719,15 @@
                 transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
                 backdrop-filter: blur(0px);
                 -webkit-backdrop-filter: blur(0px);
+            }
+            
+            /* SweetAlert z-index fix */
+            .sweetalert-popup {
+                z-index: 10000 !important;
+            }
+            
+            .swal2-container {
+                z-index: 10000 !important;
             }
             .consultation-modal.active {
                 display: flex;
@@ -2744,8 +2848,10 @@
             }
         </style>
 
+        <!-- Index Page Specific JavaScript -->
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            $(document).ready(function() {
+                // Modal functionality
                 const modal = document.getElementById('consultationModal');
                 const closeBtn = modal.querySelector('.close-modal');
                 
@@ -2766,13 +2872,164 @@
                     }
                 });
                 
-                // Handle form submission
-                const form = modal.querySelector('form');
-                form.addEventListener('submit', (e) => {
+                // Modal form submission
+                $('#consultation-form').submit(async function(e) {
                     e.preventDefault();
-                    // Add your form submission logic here
-                    alert('Thank you for your interest! We will contact you soon.');
-                    modal.classList.remove('active');
+                    
+                    // Basic validation - only phone is required
+                    let isValid = true;
+                    const phoneValue = $('#consultation-form [name="phone"]').val();
+                    
+                    if (!phoneValue) {
+                        isValid = false;
+                        $('#consultation-form [name="phone"]').addClass('error');
+                    } else {
+                        $('#consultation-form [name="phone"]').removeClass('error');
+                    }
+                    
+                    if (isValid) {
+                        // Collect form data
+                        const formData = {
+                            name: $('#consultation-form [name="name"]').val(),
+                            phone: $('#consultation-form [name="phone"]').val(),
+                            email: $('#consultation-form [name="email"]').val(),
+                            service_interest: $('#consultation-form [name="service_interest"]').val(),
+                            additional_info: $('#consultation-form [name="additional_info"]').val(),
+                            form_type: 'consultation'
+                        };
+                        
+                        try {
+                            // Show loading state
+                            const submitBtn = $(this).find('button[type="submit"]');
+                            const originalText = submitBtn.html();
+                            submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Submitting...');
+                            submitBtn.prop('disabled', true);
+                            
+                            // Send API request
+                            const response = await fetch('https://test.takshaga.com/api/quote', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(formData)
+                            });
+                            
+                            if (response.ok) {
+                                const result = await response.json();
+                                
+                                // Close modal first
+                                modal.classList.remove('active');
+                                
+                                // Reset form
+                                this.reset();
+                                
+                                // Show success SweetAlert
+                                Swal.fire({
+                                    title: 'Success!',
+                                    text: 'Your consultation request has been submitted successfully. We will contact you within 24 hours.',
+                                    icon: 'success',
+                                    confirmButtonText: 'Great!',
+                                    confirmButtonColor: '#A6A182',
+                                    background: '#1a1a1a',
+                                    color: '#f5f5dc'
+                                });
+                            } else {
+                                const errorData = await response.json();
+                                alert('Error submitting request: ' + (errorData.message || 'Please try again.'));
+                            }
+                        } catch (error) {
+                            console.error('Error:', error);
+                            alert('Error submitting request. Please check your connection and try again.');
+                        } finally {
+                            // Reset button state
+                            const submitBtn = $(this).find('button[type="submit"]');
+                            submitBtn.html(originalText);
+                            submitBtn.prop('disabled', false);
+                        }
+                    } else {
+                        alert('Please fill in all required fields.');
+                    }
+                });
+                
+                // Consultation section form submission
+                $('#consultation-section-form').submit(async function(e) {
+                    e.preventDefault();
+                    
+                    // Basic validation - only phone is required
+                    let isValid = true;
+                    const phoneValue = $('[name="phone"]').val();
+                    
+                    if (!phoneValue) {
+                        isValid = false;
+                        $('[name="phone"]').addClass('error');
+                    } else {
+                        $('[name="phone"]').removeClass('error');
+                    }
+                    
+                    if (isValid) {
+                        // Collect form data
+                        const formData = {
+                            name: $('[name="name"]').val(),
+                            phone: $('[name="phone"]').val(),
+                            email: $('[name="email"]').val(),
+                            service_interest: $('[name="service_interest"]').val(),
+                            additional_info: $('[name="additional_info"]').val(),
+                            form_type: 'consultation_section'
+                        };
+                        
+                        try {
+                            // Show loading state
+                            const submitBtn = $(this).find('button[type="submit"]');
+                            const originalText = submitBtn.html();
+                            submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Submitting...');
+                            submitBtn.prop('disabled', true);
+                            
+                            // Send API request
+                            const response = await fetch('https://test.takshaga.com/api/quote', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(formData)
+                            });
+                            
+                            if (response.ok) {
+                                const result = await response.json();
+                                
+                                // Show success SweetAlert
+                                Swal.fire({
+                                    title: 'Success!',
+                                    text: 'Your consultation request has been submitted successfully. We will contact you within 24 hours.',
+                                    icon: 'success',
+                                    confirmButtonText: 'Great!',
+                                    confirmButtonColor: '#A6A182',
+                                    background: '#1a1a1a',
+                                    color: '#f5f5dc'
+                                });
+                                
+                                // Reset form
+                                this.reset();
+                            } else {
+                                const errorData = await response.json();
+                                alert('Error submitting request: ' + (errorData.message || 'Please try again.'));
+                            }
+                        } catch (error) {
+                            console.error('Error:', error);
+                            alert('Error submitting request. Please check your connection and try again.');
+                        } finally {
+                            // Reset button state
+                            const submitBtn = $(this).find('button[type="submit"]');
+                            submitBtn.html(originalText);
+                            submitBtn.prop('disabled', false);
+                        }
+                    } else {
+                        alert('Please fill in all required fields.');
+                    }
+                });
+                
+                // Remove error class on input
+                $('input, select, textarea').on('input change', function() {
+                    $(this).removeClass('error');
                 });
             });
         </script>
