@@ -146,3 +146,10 @@ a.meanmenu-reveal {
 .mean-remove {
     display: none !important
 }
+
+/* Mobile: keep hamburger nav expanded (all sections visible) */
+@media (max-width: 1199px) {
+    .mean-container .mean-nav ul {
+        display: block !important;
+    }
+}
